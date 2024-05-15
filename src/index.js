@@ -7,7 +7,7 @@ var lightbulb = require('./lightbulb')
 var sensor = require('./sensor')
 var temperature = require('./temperature')
 var valve = require('./valve')
-
+var energy = require('./energy')
 
 handlers = {
     'mqtt-tasmota-blinds': blinds,
@@ -19,11 +19,11 @@ handlers = {
     'mqtt-tasmota-fan': fan,
     'mqtt-tasmota-lightbulb': lightbulb,
     'mqtt-tasmota-sensor': sensor,
-    'mqtt-tasmota-valve': valve
+    'mqtt-tasmota-valve': valve,
+    'mqtt-tasmota-energy': energy
 }
 
 class MqttTasmotaAccessory {
-
     constructor(log, config, api) {
         log('New mqtt-tasmota accessory', config.accessory)
         if (config.accessory == 'mqtt-tasmota') {

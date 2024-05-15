@@ -22,7 +22,8 @@
     "lightbulb",
     "tasmota",
     "mqtt",
-    "sonoff"
+    "sonoff",
+    "energy"
   ],
   "engines": {
     "node": ">=14.0.0",

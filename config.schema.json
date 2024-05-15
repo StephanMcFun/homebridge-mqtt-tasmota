@@ -91,6 +91,9 @@
           },{
             "title": "Valve",
             "enum": ["valve"]
+          },{
+            "title": "Energy",
+            "enum": ["energy"]
           }
         ]
       },
